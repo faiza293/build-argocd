@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
       - name: argo-app
-        image: northamerica-northeast2-docker.pkg.dev/argocd-demo-432200/argo-repo/argo-app:COMMIT_SHA
+        image: northamerica-northeast2-docker.pkg.dev/argocd-demo-432200/argo-repo/argo-app:commit-sha
         ports:
         - containerPort: 8080
