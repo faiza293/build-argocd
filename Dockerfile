@@ -1,4 +1,4 @@
-e the official NGINX base image
+#e the official NGINX base image
 FROM nginx:alpine
 
 # Copy the index.html file into the directory that NGINX serves files from
