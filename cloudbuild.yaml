@@ -27,6 +27,7 @@ steps:
     echo "Pushing changes to k8s manifest repo ..."
     git config --global user.name "faiza mukve"
     git config --global user.email "faizafaazmukve@gmail.com"
+    git checkout -b ${_CD_BRANCH} # Ensures branch is correctly set locally
     git add -A
     git commit -m "[Cloud Builder] Updated image tag northamerica-northeast2-docker.pkg.dev/$PROJECT_ID/${_ARTIFACT_REPO}/argo-app:$SHORT_SHA from commit ${COMMIT_SHA}"
     git push https://faiza293:$$GIT_ACCESS_TOKEN@github.com/faiza293/build-argocd.git ${_CD_BRANCH}
@@ -37,4 +38,4 @@ availableSecrets:
     env: 'GIT_ACCESS_TOKEN'
 
 options:
-  logging: CLOUD_LOGGING_ONLY   # logging 
+  logging: CLOUD_LOGGING_ONLY   # logging
