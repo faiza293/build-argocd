@@ -33,7 +33,7 @@ steps:
     
 availableSecrets:
   secretManager:
-  - versionName: projects/$PROJECT_NUMBER/secrets/github-access-token/versions/latest
+  - versionName: projects/$PROJECT_NUMBER/secrets/GIT_ACCESS_TOKEN
     env: 'GIT_ACCESS_TOKEN'
 
 options:
