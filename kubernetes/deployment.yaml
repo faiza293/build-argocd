@@ -18,6 +18,6 @@ spec:
     spec:
       containers:
       - name: argo-app
-        image: northamerica-northeast2-docker.pkg.dev/GOOGLE_CLOUD_PROJECT/my-repo/argo-app:COMMIT_SHA
+        image: northamerica-northeast2-docker.pkg.dev/GOOGLE_CLOUD_PROJECT/argo-repo/argo-app:COMMIT_SHA
         ports:
         - containerPort: 8080
